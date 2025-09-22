@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  node_version = "20"
 
 [functions]
   node_bundler = "esbuild"
@@ -11,7 +10,7 @@
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "20.19.0"
   NEXT_TELEMETRY_DISABLED = "1"
 
 # Optional security headers

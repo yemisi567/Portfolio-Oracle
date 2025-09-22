@@ -1,0 +1,37 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+  node_version = "20"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = []
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+# Optional security headers
+[[headers]]
+  for = "/"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+
+# Ensure app router routes fall back correctly
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/next_api__server"
+  status = 200
+
+# Fallback for all other routes handled by Next
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false

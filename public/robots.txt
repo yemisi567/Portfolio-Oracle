@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portfolio-project-oracle.vercel.app/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /dashboard/
+Disallow: /onboarding/
+Disallow: /forgot-password/
+Disallow: /reset-password/
+
+# Allow public pages
+Allow: /
+Allow: /login
+Allow: /signup
+Allow: /market-insights
+Allow: /support

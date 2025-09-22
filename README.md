@@ -4,6 +4,9 @@
 
 Transform your coding journey with personalized portfolio project ideas tailored to your skills and career goals. Generate, track, and showcase projects that matter to your professional growth.
 
+<img width="1771" height="901" alt="Screenshot 2025-09-22 at 22 56 10" src="https://github.com/user-attachments/assets/897cbd90-a189-4d67-ad6e-767613e3a9df" />
+
+
 ## ✨ Features
 
 ### AI-Powered Project Generation
@@ -18,12 +21,18 @@ Transform your coding journey with personalized portfolio project ideas tailored
 - **Country-Specific Analysis**: Get market data for different regions and countries
 - **Skill Demand Tracking**: Understand which technologies are in high demand
 
+<img width="1761" height="893" alt="Screenshot 2025-09-22 at 22 55 54" src="https://github.com/user-attachments/assets/2e6c9513-81a7-4de3-9158-357370ec4d13" />
+
+
 ### Project Management
 
 - **Milestone Tracking**: Break down projects into manageable milestones with progress tracking
 - **Manual Progress Updates**: Mark milestones as complete/incomplete manually
 - **Project Status Management**: Move projects between planned, in-progress, and completed states
 - **Detailed Project Views**: Comprehensive project details with challenges, resources, and notes
+
+
+<img width="1757" height="890" alt="Screenshot 2025-09-22 at 22 55 25" src="https://github.com/user-attachments/assets/625e0d15-12b6-4333-b325-433d36b6bbe2" />
 
 ### User Management
 

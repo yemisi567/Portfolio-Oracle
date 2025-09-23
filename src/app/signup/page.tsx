@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { X, Sparkles } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import CustomInput from "../components/CustomInput";
-import router from "next/router";
 
 export default function SignupPage() {
   const [formData, setFormData] = useState({
@@ -20,6 +20,7 @@ export default function SignupPage() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { signup } = useAuth();
+  const router = useRouter();
 
   const getPasswordStrength = (password: string) => {
     if (!password) return { score: 0, label: "", color: "" };

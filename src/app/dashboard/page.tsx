@@ -267,6 +267,38 @@ export default function DashboardPage() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
+            {(!filteredProjects || filteredProjects.length === 0) && (
+              <div className="col-span-full">
+                <div className="bg-gray-900/80 backdrop-blur-xl p-10 rounded-2xl border border-gray-800/50 text-center">
+                  <div className="mx-auto mb-4 w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center">
+                    <Sparkles className="w-7 h-7 text-white" />
+                  </div>
+                  <h2 className="text-white text-xl font-semibold mb-2">
+                    No projects yet
+                  </h2>
+                  <p className="text-gray-400 max-w-xl mx-auto mb-6">
+                    Kickstart your portfolio with an AI-generated project idea
+                    tailored to your skills and interests, or create one from
+                    scratch.
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <Link
+                      href="/generate-project"
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-green-500 text-white px-5 py-2.5 rounded-lg hover:from-blue-600 hover:to-green-600 transition-colors"
+                    >
+                      <Sparkles className="w-4 h-4" />
+                      Generate a Project
+                    </Link>
+                    <Link
+                      href="/support"
+                      className="text-gray-300 hover:text-white px-4 py-2 rounded-lg border border-gray-700 hover:border-gray-600 transition-colors"
+                    >
+                      Learn about good projects
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
             {filteredProjects?.map((project, index) => (
               <motion.div
                 key={project.id}

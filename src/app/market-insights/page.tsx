@@ -647,8 +647,7 @@ export default function MarketInsightsPage() {
               No Data Available
             </h3>
             <p className="text-gray-400 mb-4">
-              Unable to fetch market insights. This might be due to API rate
-              limits.
+              Unable to fetch market insights. Please try again later.
             </p>
             <button
               onClick={handleRefresh}

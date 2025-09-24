@@ -207,27 +207,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         resetSessionTimer();
 
         if (pendingRedirect) {
-          console.log("Checking onboarding status...");
+          // Show onboarding immediately for better perceived performance
           setPendingRedirect(false);
+          router.replace("/onboarding");
 
-          try {
-            const response = await fetch("/api/user-profiles", {
-              headers: {
-                "user-id": session.user.id,
-              },
-            });
-
-            const result = await response.json();
-
-            if (result.success && result.data) {
-              router.push("/dashboard");
-            } else {
-              router.push("/onboarding");
+          // Background check: if profile already exists, send user to dashboard
+          (async () => {
+            try {
+              const response = await fetch("/api/user-profiles", {
+                headers: {
+                  "user-id": session.user.id,
+                },
+              });
+              const result = await response.json();
+              if (result.success && result.data) {
+                router.replace("/dashboard");
+              }
+            } catch (error) {
+              console.error("Error checking onboarding status:", error);
             }
-          } catch (error) {
-            console.error("Error checking onboarding status:", error);
-            router.push("/onboarding");
-          }
+          })();
         }
       } else {
         setUser(null);

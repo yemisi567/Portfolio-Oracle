@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
         data: {
           jobs: [],
           totalJobs: 0,
-          message: 'No job data available. This might be due to API rate limits or no jobs found for the selected criteria.'
+          message: 'No job data available.'
         },
         metadata: {
           country,

@@ -256,7 +256,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         throw new Error(error.message);
       }
 
+      // Optimistic UX: show onboarding immediately, then background-check profile
       setPendingRedirect(true);
+      router.replace("/onboarding");
     } catch (error) {
       console.error("Login error:", error);
       throw error;

@@ -426,9 +426,11 @@ export default function DashboardPage() {
                   </span>
                   <Link
                     href={`/projects/${project.id}`}
-                    className="p-2 text-gray-400 hover:text-white transition-colors"
+                    className="inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-md bg-gradient-to-r from-blue-500 to-green-500 text-white hover:from-blue-600 hover:to-green-600 transition-colors"
+                    aria-label={`View details for ${project.title}`}
                   >
                     <ExternalLink className="w-4 h-4" />
+                    <span>View details</span>
                   </Link>
                 </div>
               </motion.div>

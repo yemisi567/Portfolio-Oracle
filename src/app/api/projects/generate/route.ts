@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { GeneratedProject } from '@/lib/types';
 
-// Initialize OpenRouter client using OpenAI SDK
 const openrouterClient = new OpenAI({
   baseURL: 'https://openrouter.ai/api/v1',
   apiKey: process.env.OPENROUTER_API_KEY,
@@ -10,7 +9,6 @@ const openrouterClient = new OpenAI({
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if API key is set
     const apiKey = process.env.OPENROUTER_API_KEY;
     
     if (!apiKey) {

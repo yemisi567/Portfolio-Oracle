@@ -21,3 +21,9 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+
+# Cron job to keep Supabase active
+# Runs once per day at 9 AM UTC 
+[[cron]]
+  schedule = "0 9 * * *"
+  path = "/api/health"

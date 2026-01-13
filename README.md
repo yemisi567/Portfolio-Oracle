@@ -30,8 +30,6 @@ Transform your coding journey with personalized portfolio project ideas tailored
 - **Detailed Project Views**: Comprehensive project details with challenges, resources, and notes
 
 
-<img width="1757" height="890" alt="Screenshot 2025-09-22 at 22 55 25" src="https://github.com/user-attachments/assets/625e0d15-12b6-4333-b325-433d36b6bbe2" />
-
 ### User Management
 
 - **Secure Authentication**: Built with Supabase Auth for secure user management
@@ -120,22 +118,13 @@ Transform your coding journey with personalized portfolio project ideas tailored
    NEXT_PUBLIC_SITE_URL=
    ```
 
-4. **Set up the database**
-   Run the SQL scripts in your Supabase SQL editor:
-
-   ```sql
-   -- Run database-schema.sql
-   -- Run add-password-reset-table.sql
-   -- Run add-market-insights-cache-tables.sql
-   ```
-
-5. **Start the development server**
+4. **Start the development server**
 
    ```bash
    npm run dev
    ```
 
-6. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## Project Structure
@@ -213,24 +202,6 @@ portfolio-project-oracle/
 - **Input Validation** - Comprehensive data validation
 - **Rate Limiting** - API abuse prevention
 - **CORS Configuration** - Cross-origin request security
-
-## Contributing
-
-I welcome contributions. Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow TypeScript best practices
-- Use meaningful commit messages
-- Write clean, readable code
-- Test your changes thoroughly
-- Update documentation as needed
 
 ## License
 

@@ -4,10 +4,8 @@
 
 Transform your coding journey with personalized portfolio project ideas tailored to your skills and career goals. Generate, track, and showcase projects that matter to your professional growth.
 
-<img width="1771" height="901" alt="Screenshot 2025-09-22 at 22 56 10" src="https://github.com/user-attachments/assets/897cbd90-a189-4d67-ad6e-767613e3a9df" />
 
-
-## ✨ Features
+## Features
 
 ### AI-Powered Project Generation
 
@@ -48,7 +46,7 @@ Transform your coding journey with personalized portfolio project ideas tailored
 - **Smooth Animations**: Framer Motion powered animations for delightful interactions
 - **Accessibility**: Built with accessibility best practices
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
